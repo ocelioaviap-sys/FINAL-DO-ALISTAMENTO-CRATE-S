@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-tse-yellow: #ecc500;
+  --color-tse-yellow-light: #f8e142;
+  --color-tse-yellow-dark: #dcb800;
+  --color-tse-orange: #db9736;
+  
+  --color-tse-blue: #6089ac;
+  --color-tse-blue-light: #86aacd;
+  --color-tse-blue-dim: #6d83a4;
+  --color-tse-blue-dark: #5d6b94;
+  
+  --color-tse-green: #6b862b;
+  --color-tse-green-light: #a2bd31;
+  --color-tse-green-muted: #9aaf77;
+  --color-tse-green-dark: #5e7171;
+  
+  --color-tse-charcoal: #333333;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-tse-charcoal antialiased;
+  }
+}
+
+.wavy-border {
+  mask-image: url("data:image/svg+xml,%3Csvg width='100%25' height='20' viewBox='0 0 1200 20' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,20 C150,20 350,0 600,0 C850,0 1050,20 1200,20 L1200,20 L0,20 Z' fill='black'/%3E%3C/svg%3E");
+  mask-position: bottom;
+  mask-repeat: no-repeat;
+  padding-bottom: 20px;
+}
